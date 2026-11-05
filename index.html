@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prateeksha Rao | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#030504;--card:#0d1a12;--line:#1f3a2a;--g1:#2ee59d;--g2:#8ed95a;--amber:#f0a81a;--tx:#f4f7f5;--mu:#aab8b0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#030504;--tx:#f4f7f5}}
+:root[data-theme="dark"]{--bg:#030504}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Montserrat,system-ui,sans-serif;line-height:1.6;
+background-image:radial-gradient(circle at 5% 10%,rgba(46,229,157,.18),transparent 30%),radial-gradient(circle at 95% 40%,rgba(240,168,26,.12),transparent 30%),radial-gradient(circle at 20% 95%,rgba(142,217,90,.15),transparent 30%);background-attachment:fixed}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:12px auto;max-width:1100px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 22px;border:1px solid var(--line);border-radius:30px;background:rgba(10,20,14,.85);backdrop-filter:blur(10px)}
+nav b{font-weight:600}nav .links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--mu);text-decoration:none;font-size:.9rem}nav a:hover{color:var(--tx)}
+.btn{background:var(--g2);color:#04110a!important;border:0;border-radius:20px;padding:7px 18px;font:600 .85rem Montserrat,sans-serif;cursor:pointer;text-decoration:none}
+section,header{max-width:1100px;margin:0 auto;padding:56px 20px}
+h1,h2{margin:0 0 14px;line-height:1.1}
+.grad{background:linear-gradient(90deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:300}
+h1{font-size:clamp(2.4rem,7vw,4.6rem)}h1 b,h2 b{color:var(--tx);font-weight:800;display:block}
+h2{font-size:clamp(1.8rem,4.5vw,2.8rem)}
+.tag{color:var(--g1);font-weight:600;font-size:.9rem;letter-spacing:.04em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.hero{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.av{width:120px;height:120px;border-radius:50%;border:4px solid var(--g2);display:grid;place-items:center;font-size:2.4rem;font-weight:800;background:#08150d;color:var(--g1)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stat{background:var(--g2);color:#04110a;border-radius:18px;padding:14px 6px;text-align:center}
+.stat:nth-child(2){background:#fff}.stat strong{display:block;font-size:1.8rem;font-weight:800}.stat span{font-size:.78rem}
+.chip{display:inline-block;margin:4px 6px 4px 0;padding:6px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(46,229,157,.07);font-size:.85rem}
+h3{margin:0 0 6px;color:var(--g2)}p{margin:6px 0;color:var(--mu)}
+.card a{color:var(--g1)}
+.bar{height:8px;border-radius:6px;background:#1c2d23;margin-top:8px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--g1),var(--g2))}
+footer{text-align:center;padding:30px 20px 50px;color:var(--mu);font-size:.85rem}
+body.editing .e{outline:1px dashed var(--amber);outline-offset:3px;border-radius:4px;cursor:text}
+#bar{display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#1a1405;border:1px solid var(--amber);border-radius:24px;padding:8px 16px;font-size:.82rem;gap:12px;align-items:center}
+body.editing #bar{display:flex}
+#bar button{background:none;border:1px solid var(--mu);color:var(--tx);border-radius:14px;padding:4px 12px;cursor:pointer;font:inherit}
+</style>
+</head>
+<body>
+<nav>
+  <b>Prateeksha Rao</b>
+  <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><button class="btn" id="edit" type="button">Edit page</button></div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="tag e">GOOGLE AI BOOTCAMP · BENGALURU · HACK2SKILL</div>
+    <h1 class="grad"><span class="e">Aspiring</span> <b class="e">AI Developer</b></h1>
+    <p class="e">CSE student building AI-enabled applications and human-centred tools for practical community challenges.</p>
+    <p><a class="btn" href="#projects">View projects</a> <a class="btn" style="background:#fff" href="https://github.com/fyi-pratee">GitHub</a></p>
+  </div>
+  <div class="card">
+    <div style="display:flex;gap:18px;align-items:center">
+      <div class="av">MP</div>
+      <div><div class="tag">Full Name:</div><h3 class="e" style="color:var(--tx);font-size:1.4rem">Mantradi Prateeksha Rao</h3><p class="e" style="margin:0">Computer Science &amp; Engineering Student</p></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong class="e">3</strong><span class="e">Featured Projects</span></div>
+      <div class="stat"><strong class="e">2nd</strong><span class="e">Hackathon Place</span></div>
+      <div class="stat"><strong class="e">6</strong><span class="e">GitHub Repos</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="grad">About <b>Me</b></h2>
+  <div class="grid">
+    <div class="card"><h3>Education</h3><p class="e"><b style="color:var(--tx)">RNS Institute of Technology, Bengaluru</b><br>B.E. Computer Science &amp; Engineering, Semester 2<br>Expected graduation: 2029</p></div>
+    <div class="card"><h3>Academic interests</h3><p class="e">Software development, AI-enabled applications, and human-centred design and technology for practical community challenges.</p></div>
+    <div class="card"><h3>Career interests</h3><p class="e">Student-led technical projects, event and committee collaboration, UI/UX, AI-powered tools, and practical solutions that pair technology with thoughtful user experience.</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="grad">Technical <b>Skills</b></h2>
+  <div class="grid">
+    <div class="card"><h3>Programming</h3><span class="chip e">C</span><span class="chip e">Python</span><span class="chip e">Java</span></div>
+    <div class="card"><h3>Web &amp; Data</h3><span class="chip e">React</span><span class="chip e">Flask</span><span class="chip e">TypeScript</span><span class="chip e">Tailwind CSS</span><span class="chip e">PostgreSQL</span><span class="chip e">Scikit-learn</span><span class="chip e">Pandas</span><span class="chip e">Docker</span></div>
+    <div class="card"><h3>Design &amp; Creative</h3><span class="chip e">UI/UX Design</span><span class="chip e">Canva</span></div>
+    <div class="card"><h3>Professional</h3><span class="chip e">Leadership</span><span class="chip e">Teamwork</span><span class="chip e">Communication</span><span class="chip e">Problem-solving</span><span class="chip e">Presenting ideas</span></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="grad">Featured <b>Projects</b></h2>
+  <div class="grid">
+    <div class="card"><div class="tag">AI · SUSTAINABILITY · 2nd PLACE</div><h3 class="e">MorphoPack</h3><p class="e">AI-powered sustainable packaging platform. Transforms uploaded 3D meshes into packaging geometry and manufacturable 2D SVG dielines, with 3D preview and analytics for material efficiency and environmental impact.</p><p class="e"><b>Stack:</b> React, Flask, PostgreSQL, Blender Python API, Trimesh, Docker</p><p><a href="https://github.com/rasam729/MorphoPack">View on GitHub →</a></p></div>
+    <div class="card"><div class="tag">AI · FASHIONTECH</div><h3 class="e">VastraKala Labs</h3><p class="e">AI-assisted FashionTech platform connecting traditional Indian fashion inspiration, digital design and tailoring workflows, with culturally aware design exploration and a path toward garment and pattern development.</p><p class="e"><b>Stack:</b> React, Vite, TypeScript, Tailwind CSS, Google Generative AI SDK, Supabase</p><p><a href="https://github.com/fyi-pratee/VastraKala-Labs">View on GitHub →</a></p></div>
+    <div class="card"><div class="tag">ML · AGRICULTURE</div><h3 class="e">Krushi Mitra</h3><p class="e">A farmer-oriented digital solution making useful agricultural information more accessible, designed around community needs.</p><p class="e"><b>Stack:</b> Python 3.10+, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Flask, HTML5, CSS3, Jupyter Notebook</p></div>
+  </div>
+</section>
+
+<section id="journey">
+  <h2 class="grad">Achievements <b>&amp; Leadership</b></h2>
+  <div class="grid">
+    <div class="card"><h3 class="e">🏆 2nd Place, GitHub DevDays Hackathon</h3><p class="e">Unstop, June 2026. Recognised for MorphoPack: packaging geometry and 2D dielines from 3D meshes, with analytics on material efficiency and environmental impact.</p></div>
+    <div class="card"><h3 class="e">Antariksh Club: DMC Committee Member</h3><p class="e">Committee coordination and collaborative club initiatives, combining creative thinking, communication, design awareness and a technology mindset.</p></div>
+    <div class="card"><h3 class="e">College Magazine Editor</h3><p class="e">Editing and proofreading magazine content for clarity, accuracy and quality.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card" style="text-align:center">
+    <h2 class="grad">Let’s <b>Connect</b></h2>
+    <p class="e">Open to learning, collaborating and building with the Google AI Bootcamp community in Bengaluru.</p>
+    <p><span class="e">pratee1224@gmail.com</span> · <a href="https://github.com/fyi-pratee">GitHub: fyi-pratee</a> · <a href="https://www.linkedin.com/in/prateeksha-rao-51294a39a">LinkedIn: prateeksha-rao</a></p>
+    <p class="e">Bengaluru, Karnataka, India</p>
+  </div>
+</section>
+<footer>© 2026 Mantradi Prateeksha Rao</footer>
+
+<div id="bar"><span>Editing: click any dashed text</span><button id="save" type="button">Done</button><button id="reset" type="button">Reset</button></div>
+
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.e')),K='portfolio-edits-v1';
+  function load(){try{return JSON.parse(localStorage.getItem(K)||'{}')}catch(e){return {}}}
+  function store(o){try{localStorage.setItem(K,JSON.stringify(o))}catch(e){}}
+  var saved=load();
+  els.forEach(function(el,i){if(saved[i]!=null)el.innerHTML=saved[i]});
+  function persist(){var o={};els.forEach(function(el,i){o[i]=el.innerHTML});store(o)}
+  function setEdit(on){document.body.classList.toggle('editing',on);els.forEach(function(el){el.contentEditable=on?'true':'false'});document.getElementById('edit').textContent=on?'Stop editing':'Edit page';if(!on)persist()}
+  els.forEach(function(el){el.addEventListener('input',persist)});
+  document.getElementById('edit').onclick=function(){setEdit(!document.body.classList.contains('editing'))};
+  document.getElementById('save').onclick=function(){setEdit(false)};
+  document.getElementById('reset').onclick=function(){try{localStorage.removeItem(K)}catch(e){}location.reload()};
+})();
+</script>
+</body>
+</html>
